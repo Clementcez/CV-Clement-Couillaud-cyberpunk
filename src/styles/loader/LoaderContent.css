@@ -1,0 +1,139 @@
+@keyframes showAnimation {
+  0%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes barMoveToRight {
+    0% {
+      transform: scaleX(0);
+    }
+    17% {
+      transform: scaleX(0.18);
+    }
+    24% {
+      transform: scaleX(0.4);
+    }
+    46% {
+      transform: scaleX(0.58);
+    }
+    66% {
+      transform: scaleX(0.78);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes containerMoveToRight {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes spinner {
+    0% {
+      transform: translateX(12px) translateY(12px) rotate(0);
+    }
+    100% {
+      transform: translateX(12px) translateY(12px) rotate(360deg);
+    }
+  }
+  
+  .container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    border: solid 2px #FF635C;
+    padding: 1rem;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: showAnimation 3s ease-out both;
+  }
+  
+  .loader {
+    color: #FF635C;
+    width: 75%;
+    height: auto;
+  }
+  .loader > p {
+    font-size: small;
+  }
+  .loader__container {
+    height: 1rem;
+    padding: 5px;
+    border: solid 2px #FF635C;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: containerMoveToRight 1s linear both;
+  }
+  .loader__container__bar {
+    height: 100%;
+    background-color: #FF635C;
+    box-shadow: 0px 0px 15px 1px #FF635C;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: barMoveToRight 2s 1s both;
+  }
+  
+  .spinner {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    animation: moveToRight 1s linear;
+  }
+  .spinner__circle {
+    width: 80.7692307692px;
+    height: 80.7692307692px;
+    border: solid #FF635C 1px;
+    border-radius: 80.7692307692px;
+    transform-origin: center;
+    transform: translateX(12px) translateY(12px);
+  }
+  .spinner__circle__center {
+    font-size: 57px;
+    color: #FF635C;
+    transform: translateX(12px) translateY(12px);
+    animation: spinner 0.5s 1s 4 linear;
+  }
+  .spinner__corner {
+    position: absolute;
+    width: 26.25px;
+    height: 26.25px;
+    border-top: solid #FF635C 2px;
+    border-right: solid #FF635C 2px;
+  }
+  .spinner__corner--topLeft {
+    transform: rotate(270deg);
+  }
+  .spinner__corner--topRight {
+    right: 0;
+  }
+  .spinner__corner--botLeft {
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+  .spinner__corner--botRight {
+    right: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+  }

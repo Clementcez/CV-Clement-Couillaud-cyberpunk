@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@font-face {
+    font-family: "Cyberpunk";
+    src: url("../fontCyberpunk/Cyberpunk-Regular.ttf") format("truetype");
+}
+
+body{
+    margin: unset;
+}
+
+#root{
+    font-family: 'Dosis', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: unset;
+    padding-bottom: 2rem;
+}
+
+.nomade{
+    background-image: url(../assets/nomadeWallpaper.jpg);
+}
+
+.gosseDesRues{
+    background-image: url(../assets/childWallpaper.jpg);
+}
+
+.corpo{
+    background-image: url(../assets/corpoWallpaper.jpg);
+}

@@ -1,0 +1,52 @@
+
+@keyframes showScreenContentApropos {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.apropos{
+    position: relative;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border: solid #FF635C 2px;
+    box-shadow: 0px 0px 15px 1px #FF635C;
+    opacity: 0.8;
+}
+
+.apropos .fileEffect1{
+    left: -2px;
+}
+
+.apropos .fileEffect2{
+    left: 60px;
+    top: -20px;
+}
+
+.aproposTitle{
+    font-family: 'Cyberpunk';
+    font-size: xx-large;
+    width: auto;
+    color: #FFF001;
+    text-shadow: 2px 2px 0px #56BED9;
+    text-align: center;
+}
+
+.fullContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 0;
+    animation: showScreenContentApropos 3.3s;
+}

@@ -1,0 +1,26 @@
+
+.cyberBtn{
+    border: unset;
+    height: 2rem;
+    background: linear-gradient(45deg, transparent 12px, #FFF001 0);
+    cursor: pointer;
+    margin: 2rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    border-right: solid #56BED9 3px;
+    font-family: 'Dosis';
+    font-size: large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cyberBtn>span{
+    position: relative;
+    bottom: -7px;
+    background-color: black;
+    font-size: 9px;
+    color: white;
+    border-left: solid #56BED9 3px;
+}

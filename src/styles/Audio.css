@@ -1,0 +1,67 @@
+
+@keyframes defilement {
+    0%{
+        transform: translateX(-100%)
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.modulAudio{
+    position: relative;
+    border-right: solid #56BED9 3px;
+    height: 65px;
+}
+
+audio{
+    height: 65px;
+    background: linear-gradient(45deg, transparent 18px, #FFF001 0);
+}
+
+.containerTitleMusic{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom: 10px;
+}
+
+.musicTitle{
+    position: relative;
+    color: black;
+    margin: unset;
+    font-family: 'Dosis';
+    font-weight: bold;
+    transform-origin: center;
+    transform: translateX(-100%);
+    animation: defilement 5s linear infinite;
+}
+
+audio::-webkit-media-controls {
+    display: flex;
+    justify-content: flex-start;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: unset;
+    background: transparent;
+}
+
+.modulAudio>span{
+    position: absolute;
+    font-family: 'Dosis';
+    bottom: 0px;
+    right: 20px;
+    background-color: black;
+    font-size: 9px;
+    color: white;
+    border-left: solid #56BED9 3px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-left: 3px;
+}
+

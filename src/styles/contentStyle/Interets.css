@@ -1,0 +1,69 @@
+
+.interets{
+    width: 100%;
+    background: black;
+    border: solid #FF635C 2px;
+    box-shadow: 0px 0px 15px 1px #FF635C;
+}
+
+.containerInterets{
+    display: flex;
+    justify-content: space-around;
+}
+
+.interetsTitle{
+    font-family: 'Cyberpunk';
+    font-size: xx-large;
+    width: auto;
+    color: #FFF001;
+    text-shadow: 2px 2px 0px #56BED9;
+    text-align: center;
+}
+
+.interets1{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(180deg, transparent 5px, #FF635C 0) top right,
+            linear-gradient(315deg, transparent 9px, #FF635C 0) bottom right, 
+            linear-gradient(214deg, transparent 85px, #FF635C 0) top left;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    border-left: solid #b85651 5px;
+}
+
+.interets1>p{
+    margin-left: 1rem;
+    font-family: 'Dosis';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.containerInteretsList{
+    position: relative;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.interetsList{
+    position: absolute;
+    width: 247px;
+    padding-bottom: 10px;
+    margin: unset;
+    list-style: square inside;
+    background: linear-gradient(315deg, transparent 9px, #FF635C 0);
+    border-left: solid #b85651 5px;
+    font-family: 'Dosis';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: black;
+    transform: translateY(-100%);
+}
+
+.interets1:hover + .containerInteretsList > .interetsList{
+    transform: translateY(0%);
+    transition: 0.3s linear;
+}

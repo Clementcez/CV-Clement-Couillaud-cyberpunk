@@ -1,0 +1,11 @@
+.selectMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: solid #FF635C 2px;
+    box-shadow: 0px 0px 15px 1px #FF635C;
+    font-family: 'Cyberpunk';
+}
