@@ -1,12 +1,67 @@
+@keyframes showSoftSkills {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes separateSkillsLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes separateSkillsRight {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+@keyframes showHardSkills {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes waiting {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 .aptitude{
     position: relative;
     width: 40%;
-    background-color: black;
+    height: 70rem;
+    background: rgb(0, 0, 0, 0.8);
     color: white;
     padding: 1rem;
     border: solid #FF635C 2px;
     box-shadow: 0px 0px 15px 1px #FF635C;
-    opacity: 0.8;
 }
 
 .aptitude .fileEffect1{
@@ -25,4 +80,99 @@
     color: #FFF001;
     text-shadow: 2px 2px 0px #56BED9;
     text-align: center;
+}
+
+.aptitudeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.divSkills[animSkills='soft skills']{
+    animation: showSoftSkills 1s;
+}
+
+.divSkills[animSkills='soft skills'] > :nth-child(2n+1){
+    animation: separateSkillsLeft 0.1s 1s linear both;
+}
+
+.divSkills[animSkills='soft skills'] > :nth-child(2n){
+    animation: separateSkillsRight 0.1s 1s linear both;
+}
+
+.divSkills[animSkills='hard skills']{
+    animation: showHardSkills 1s;
+}
+
+.divSkills[animSkills='hard skills'] > :nth-child(2n){
+    animation: separateSkillsLeft 0.1s 1s linear both;
+}
+
+.divSkills[animSkills='hard skills'] > :nth-child(2n+1){
+    animation: separateSkillsRight 0.1s 1s linear both;
+}
+
+.aptitudeListTop{
+    display: flex;
+    flex-direction: row;
+    margin-left: 34px;
+}
+
+.aptitudeListTop > div{
+    width: 56px;
+    height: 50px;
+    background: linear-gradient(130deg, transparent 44px, #FF635C 0) top left,
+        linear-gradient(230deg, transparent 44px, #FF635C 0) top right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.aptitudeListCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 120px;
+    background: linear-gradient(130deg, transparent 38px, #FF635C 0) top left, 
+        linear-gradient(230deg, transparent 38px, #FF635C 0) top right,
+        linear-gradient(315deg, transparent 28px, #FF635C 0) bottom right, 
+        linear-gradient(45deg, transparent 28px, #FF635C 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.aptitudeListCenter > p {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-indent: unset;
+}
+
+.aptitudeListBot{
+    display: flex;
+    flex-direction: row;
+}
+
+.aptitudeListBot > div{
+    width: 40px;
+    height: 9px;
+    margin-left: 34px;
+    background: linear-gradient(45deg, transparent 10px, #FF635C 0) bottom left, 
+        linear-gradient(315deg, transparent 12px, #FF635C 0) bottom right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.waitClick{
+    margin-top: 5rem;
+    color: #FF635C;
+    font-weight: bold;
+    animation: waiting 2s linear infinite;
+}
+
+.waitClick > p {
+    font-size: 50px;
 }

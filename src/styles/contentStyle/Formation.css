@@ -1,12 +1,11 @@
 .formation{
     position: relative;
     width: 40%;
-    background-color: black;
+    background: rgb(0, 0, 0, 0.8);
     color: white;
     padding: 1rem;
     border: solid #FF635C 2px;
     box-shadow: 0px 0px 15px 1px #FF635C;
-    opacity: 0.8;
 }
 
 .formation .fileEffect1{
@@ -25,4 +24,12 @@
     color: #FFF001;
     text-shadow: 2px 2px 0px #56BED9;
     text-align: center;
+}
+
+.formationContent{
+    margin-top: 3rem;
+}
+
+.formationContent--last{
+    margin-bottom: 2rem;
 }

@@ -1,65 +1,57 @@
+import AnimationContent from './AnimationContent'
+import React from 'react'
+import LogoLink from '../mode/LogoLink'
+import CvPdf from '../../assets/CV_Couillaud_Clement.pdf'
 import '../../styles/contentStyle/Apropos.css'
 import '../../styles/FileEffect.css'
-import '../../styles/loader/LoaderContent.css'
-import ecranBrouillé from '../../assets/brouille.gif'
 
 function Apropos(){
     return (
         <div className="apropos">
-            <img className='fullContainer' src={ecranBrouillé} alt='brouillé'></img>
-            <div className="container">
-                <div className="loader">
-                    <p>(CCXS COMPRESSED)</p>
-                    <p>LOAD ADDRESS: 000011244</p>
-                    <div className="loader__container">
-                        <div className="loader__container__bar"></div>
-                    </div>
-                </div>
-                <div className="spinner">
-                    <div className="spinner__corner spinner__corner--topLeft"></div>
-                    <div className="spinner__corner spinner__corner--topRight"></div>
-                    <div className="spinner__corner spinner__corner--botLeft"></div>
-                    <div className="spinner__corner spinner__corner--botRight"></div>
-                    <div className="spinner__circle"><i className="spinner__circle__center fas fa-compass"></i></div>
-                </div>
-            </div>
-
+            <React.Fragment>
+                {/* duration = un nombre entre 1 et 5 */}
+                <AnimationContent duration='2'/>
+            </React.Fragment>
             <div className="fileEffect1"></div><div className="fileEffect2"></div>
             <h2 className='aproposTitle'>Apropos de moi</h2>
+
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed eleifend, felis bibendum rutrum ultricies, felis mauris tincidunt libero, 
-            eu tristique lectus massa vitae arcu. 
-            Suspendisse quis urna sem. 
-            Phasellus semper magna id luctus tristique. 
-            Nullam iaculis convallis nulla ut tempus. Duis non velit sit amet urna semper 
-            cursus ut sagittis urna. Suspendisse mattis urna sagittis mi suscipit, 
-            consectetur maximus velit molestie. Vivamus ex nisi, porttitor eget bibendum ac, 
-            auctor dignissim erat. Vivamus aliquam efficitur dolor molestie venenatis. Quisque 
-            imperdiet porta mi non eleifend. Nam hendrerit blandit felis. In faucibus nec sapien 
-            vitae pulvinar. Vivamus accumsan ultrices turpis, vitae faucibus diam consequat a. 
-            Aenean euismod tristique turpis ut fermentum. Vestibulum dignissim, lacus non luctus 
-            interdum, eros magna ullamcorper nisi, sed ullamcorper neque enim ac urna. Aliquam 
-            sit amet interdum lorem. Vestibulum eget quam sit amet ex pulvinar feugiat placerat nec ante.
-            Vestibulum eu ullamcorper ante. 
-            Etiam ut tristique arcu. Integer 
-            ligula erat, vestibulum nec ullamcorper sit amet, venenatis in nibh. 
-            Nam a ipsum sit amet enim feugiat finibus. Vestibulum dignissim, 
-            purus eu faucibus laoreet, lacus sapien pretium nisl, vitae pretium quam tortor in lorem. 
-            Vivamus et iaculis lectus. Donec vestibulum dolor vitae felis aliquam, 
-            sit amet malesuada ante eleifend. Interdum et malesuada fames ac ante ipsum primis in 
-            faucibus. Nulla ac lorem vel magna ullamcorper porta sed eget libero. Praesent luctus
-             magna lacus, eget mollis mi scelerisque vel. Sed bibendum dictum pellentesque. 
-             Mauris ac posuere ex. Fusce venenatis tristique orci sed aliquet. Orci varius natoque 
-             penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce egestas quam 
-             non sem porta euismod. Etiam facilisis nibh eget felis faucibus euismod.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Cras tincidunt, diam eget consectetur dapibus, mauris urna fringilla lorem, non bibendum 
-            justo velit et lectus. Morbi lorem lectus, molestie viverra erat vitae, bibendum porttitor 
-            mi. Cras a enim vestibulum, condimentum augue eget, hendrerit lorem. Praesent blandit 
-            magna at metus pellentesque, ut vehicula odio auctor. Proin eu purus nulla. Suspendisse 
-            potenti.
+                Depuis mon plus jeune âge, je suis passionné par les nouvelles technologies et le Web. 
+                C'était pour moi une évidence que je me réoriente vers un métier lié au monde du numérique.
             </p>
+
+            <p>
+                Afin de me conforter dans mon choix de reconversion, j'ai suivi une formation à la <b>Fabrique du Numérique </b>  
+                où j'ai acquis la méthodologie du développement. Elle m'a permis de découvrir les fondamentaux de différents languages en Html, Css, Js et Php ainsi que les bases de WordPress.
+                Nous avons été sensibilisé à la sobriété numérique, aux logiciels libres et à l'expérience utilisateur.
+            </p>
+
+            <p>
+                Et tout ça sous Linux ! <i class="fab fa-linux yellow"></i>
+            </p>
+
+            <p>
+                J'ai décidé de poursuivre l'aventure avec <b>Openclassrooms</b>.
+            </p>
+
+            <p>
+                Cette formation se compose de 7 projets différents tels que l'intégration de maquette avec scss, 
+                la réalisation d'animation grâce aux @keyframes, l'optimisation SEO, l'accessibilité numérique et les API Rest ...
+                Le projet final était de réaliser une application Web avec VueJs connecté à NodeJs et une base de donnée.
+                Je suis titulaire du BTS Développeur Web.
+            </p>
+
+            <p>
+                <i class="fas fa-long-arrow-alt-right yellow"></i> 
+                Aujourd'hui je souhaite mettre à profit mes acquis mais aussi me perfectionner au sein d'une entreprise en tant que <b>Développeur Web</b>.
+            </p>
+
+            <div className='apropos__dl'>
+                <p>Téléchargez mon CV</p> 
+                <div className='rotateLink rotateLink--mod'>
+                    <LogoLink logo='fas fa-file-download' link={CvPdf}/>
+                </div>
+            </div>
         </div>
     )
 }

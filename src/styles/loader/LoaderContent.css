@@ -1,3 +1,32 @@
+.--mode1 {
+  --animDuration: 1s;
+}
+.--mode2 {
+  --animDuration: 2s;
+}
+.--mode3 {
+  --animDuration: 3s;
+}
+.--mode4 {
+  --animDuration: 4s;
+}
+.--mode5 {
+  --animDuration: 5s;
+}
+
+@keyframes showScreenContentApropos {
+  0%{
+      opacity: 1;
+  }
+  90%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
+
 @keyframes showAnimation {
   0%{
     opacity: 1;
@@ -55,8 +84,25 @@
     }
   }
   
+  .hidden{
+    display: none !important;
+  }
+
+  .fullContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 1;
+    animation: showScreenContentApropos calc(var(--animDuration) + 0.3s);
+  }
+
   .container {
     position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,39 +113,39 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    animation: showAnimation 3s ease-out both;
+    animation: showAnimation var(--animDuration) ease-out both;
   }
   
-  .loader {
+  .loaderContent {
     color: #FF635C;
     width: 75%;
     height: auto;
   }
-  .loader > p {
+  .loaderContent > p {
     font-size: small;
   }
-  .loader__container {
+  .loaderContent__container {
     height: 1rem;
     padding: 5px;
     border: solid 2px #FF635C;
     transform-origin: left;
     transform: scaleX(0);
-    animation: containerMoveToRight 1s linear both;
+    animation: containerMoveToRight calc(var(--animDuration) /3) linear both;
   }
-  .loader__container__bar {
+  .loaderContent__container__bar {
     height: 100%;
     background-color: #FF635C;
     box-shadow: 0px 0px 15px 1px #FF635C;
     transform-origin: left;
     transform: scaleX(0);
-    animation: barMoveToRight 2s 1s both;
+    animation: barMoveToRight calc(var(--animDuration) /2) calc(var(--animDuration) /3) both;
   }
   
   .spinner {
     position: relative;
     width: 105px;
     height: 105px;
-    animation: moveToRight 1s linear;
+    animation: moveToRight calc(var(--animDuration) /3) linear;
   }
   .spinner__circle {
     width: 80.7692307692px;
@@ -113,7 +159,7 @@
     font-size: 57px;
     color: #FF635C;
     transform: translateX(12px) translateY(12px);
-    animation: spinner 0.5s 1s 4 linear;
+    animation: spinner 0.5s calc(var(--animDuration) /3) 8 linear;
   }
   .spinner__corner {
     position: absolute;

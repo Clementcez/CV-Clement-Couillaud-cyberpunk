@@ -1,25 +1,12 @@
 
-@keyframes showScreenContentApropos {
-    0%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
 .apropos{
     position: relative;
     width: 40%;
-    background-color: black;
+    background: rgb(0, 0, 0, 0.8);
     color: white;
     padding: 1rem;
     border: solid #FF635C 2px;
     box-shadow: 0px 0px 15px 1px #FF635C;
-    opacity: 0.8;
 }
 
 .apropos .fileEffect1{
@@ -40,13 +27,13 @@
     text-align: center;
 }
 
-.fullContainer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    opacity: 0;
-    animation: showScreenContentApropos 3.3s;
+.apropos__dl{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
 }
+
+.rotateLink--mod{
+    margin-left: 1rem;
+}
+

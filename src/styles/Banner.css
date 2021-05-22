@@ -1,7 +1,7 @@
 
 .cvBanner {
   position: relative;
-  background-color: black;
+  background: rgb(0, 0, 0, 0.8);
   margin: 2rem;
   margin-top: 5rem;
   font-family: "Cyberpunk";
@@ -11,7 +11,6 @@
   text-shadow: 2px 2px 0px #56BED9;
   border: solid #FF635C 2px;
   box-shadow: 0px 0px 15px 1px #FF635C;
-  opacity: 0.8;
 }
 
 

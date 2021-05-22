@@ -1,27 +1,70 @@
+import AnimationContent from './AnimationContent'
+import React from 'react'
+import LettreAL from '../../assets/lettre_recommandation_clement_AL.pdf'
+import LettreJL from '../../assets/lettre_recommandation_clement_JL.pdf'
 import '../../styles/contentStyle/Formation.css'
 
 function Formation(){
     return (
         <div className="formation">
+            <React.Fragment>
+                {/* duration = un nombre entre 1 et 5 */}
+                <AnimationContent duration='5'/>
+            </React.Fragment>
             <div className="fileEffect1"></div><div className="fileEffect2"></div>
             <h2 className='formationTitle'>Formations</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed eleifend, felis bibendum rutrum ultricies, felis mauris tincidunt libero, 
-                eu tristique lectus massa vitae arcu. 
-                Suspendisse quis urna sem. 
-                Phasellus semper magna id luctus tristique. 
-                Nullam iaculis convallis nulla ut tempus. Duis non velit sit amet urna semper 
-                cursus ut sagittis urna. Suspendisse mattis urna sagittis mi suscipit, 
-                consectetur maximus velit molestie. Vivamus ex nisi, porttitor eget bibendum ac, 
-                auctor dignissim erat. Vivamus aliquam efficitur dolor molestie venenatis. Quisque 
-                imperdiet porta mi non eleifend. Nam hendrerit blandit felis. In faucibus nec sapien 
-                vitae pulvinar. Vivamus accumsan ultrices turpis, vitae faucibus diam consequat a. 
-                Aenean euismod tristique turpis ut fermentum. Vestibulum dignissim, lacus non luctus 
-                interdum, eros magna ullamcorper nisi, sed ullamcorper neque enim ac urna. Aliquam 
-                sit amet interdum lorem. Vestibulum eget quam sit amet ex pulvinar feugiat placerat nec ante.
-                Vestibulum eu ullamcorper ante. 
-            </p>
+
+            <div className='formationContent'>
+                <h3>OPENCLASSROOMS 2020/2021 ( remote )</h3>
+                <p>
+                    Parcours développeur web
+                    Diplôme RNCP32173 niveau 5
+                </p>
+                <figcaption>
+                    <cite>
+                        Formation qualifiante qui fait suite à "La Fab du Num" afin d'enrichir 
+                        mes compétences et mes connaissances en développement web. Le côté full remote de se 
+                        projet professionnel m'a permis de gerer mon temps de travail et d'optimiser mon apprentissage.
+                    </cite>
+                    <br></br>
+                    <cite>
+                        Commentaire de Fabien Rahaingomanana, mentor Openclassrooms :
+                        "Clément est un élève très curieux, qui n'a eu de cesse d'approfondir
+                         les différentes technologies abordées tout au long du parcours. 
+                        Sociable, il n'hésitait pas à aider ceux qui étaient moins avancés."
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='formationContent'>
+                <h3>FABRIQUE DU NUMERIQUE 2019/2020 ( Poitiers )</h3>
+                <p>
+                    Parcours développeur web
+                    Certificat de fomation
+                </p>
+                <figcaption>
+                    <cite>
+                        Formation "préparatoire" dans le but d'aquerrir les bases du développement et 
+                        de découvrir les outils mais aussi différent languages de programmation.
+                        Ce fut une formation extrèmement enrichissante tant sur le plan social 
+                        et personnel, que professionnel. Découvrez les recommandations de  
+                        <a href={LettreAL} target='blank'> Andréas Livet</a> formateur front-end et
+                        <a href={LettreJL} target='blank'> Juliette Lauriol</a> responsable pédagogique à mon sujet.
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='formationContent formationContent--last'>
+                <h3>LYCÉE AUGUSTE PERRET ( Poitiers )</h3>
+                <p>
+                    BEP - BAC pro
+                </p>
+                <figcaption>
+                    <cite>
+                        Techniques et installations des systèmes énergétiques et climatiques.
+                    </cite>
+                </figcaption>
+            </div>
         </div>
     )
 }

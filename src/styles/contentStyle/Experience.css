@@ -1,8 +1,8 @@
 .experience{
     position: relative;
     width: 40%;
-    background-color: black;
-    opacity: 0.8;
+    height: fit-content;
+    background: rgb(0, 0, 0, 0.8);
     color: white;
     padding: 1rem;
     border: solid #FF635C 2px;
@@ -25,4 +25,16 @@
     color: #FFF001;
     text-shadow: 2px 2px 0px #56BED9;
     text-align: center;
+}
+
+.experienceContent{
+    margin-top: 3rem;
+}
+
+.experienceContent--last{
+    margin-bottom: 2rem;
+}
+
+.experienceContent > p{
+    animation: waiting 2s linear infinite;
 }

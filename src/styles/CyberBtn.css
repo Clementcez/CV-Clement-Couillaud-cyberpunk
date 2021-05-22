@@ -24,3 +24,8 @@
     color: white;
     border-left: solid #56BED9 3px;
 }
+
+.cyberBtn:hover{
+    transition: 0.3s;
+    transform: translateY(-3px);
+}

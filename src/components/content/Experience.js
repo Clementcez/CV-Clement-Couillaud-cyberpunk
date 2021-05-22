@@ -1,45 +1,59 @@
+import AnimationContent from './AnimationContent'
+import React from 'react'
 import '../../styles/contentStyle/Experience.css'
-
 
 function Experience(){
     return (
         <div className="experience">
+            <React.Fragment>
+                {/* duration = un nombre entre 1 et 5 */}
+                <AnimationContent duration='3'/>
+            </React.Fragment>
             <div className="fileEffect1"></div><div className="fileEffect2"></div>
             <h2 className='experienceTitle'>Experiences</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed eleifend, felis bibendum rutrum ultricies, felis mauris tincidunt libero, 
-            eu tristique lectus massa vitae arcu. 
-            Suspendisse quis urna sem. 
-            Phasellus semper magna id luctus tristique. 
-            Nullam iaculis convallis nulla ut tempus. Duis non velit sit amet urna semper 
-            cursus ut sagittis urna. Suspendisse mattis urna sagittis mi suscipit, 
-            consectetur maximus velit molestie. Vivamus ex nisi, porttitor eget bibendum ac, 
-            auctor dignissim erat. Vivamus aliquam efficitur dolor molestie venenatis. Quisque 
-            imperdiet porta mi non eleifend. Nam hendrerit blandit felis. In faucibus nec sapien 
-            vitae pulvinar. Vivamus accumsan ultrices turpis, vitae faucibus diam consequat a. 
-            Aenean euismod tristique turpis ut fermentum. Vestibulum dignissim, lacus non luctus 
-            interdum, eros magna ullamcorper nisi, sed ullamcorper neque enim ac urna. Aliquam 
-            sit amet interdum lorem. Vestibulum eget quam sit amet ex pulvinar feugiat placerat nec ante.
-            Vestibulum eu ullamcorper ante. 
-            Etiam ut tristique arcu. Integer 
-            ligula erat, vestibulum nec ullamcorper sit amet, venenatis in nibh. 
-            Nam a ipsum sit amet enim feugiat finibus. Vestibulum dignissim, 
-            purus eu faucibus laoreet, lacus sapien pretium nisl, vitae pretium quam tortor in lorem. 
-            Vivamus et iaculis lectus. Donec vestibulum dolor vitae felis aliquam, 
-            sit amet malesuada ante eleifend. Interdum et malesuada fames ac ante ipsum primis in 
-            faucibus. Nulla ac lorem vel magna ullamcorper porta sed eget libero. Praesent luctus
-             magna lacus, eget mollis mi scelerisque vel. Sed bibendum dictum pellentesque. 
-             Mauris ac posuere ex. Fusce venenatis tristique orci sed aliquet. Orci varius natoque 
-             penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce egestas quam 
-             non sem porta euismod. Etiam facilisis nibh eget felis faucibus euismod.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Cras tincidunt, diam eget consectetur dapibus, mauris urna fringilla lorem, non bibendum 
-            justo velit et lectus. Morbi lorem lectus, molestie viverra erat vitae, bibendum porttitor 
-            mi. Cras a enim vestibulum, condimentum augue eget, hendrerit lorem. Praesent blandit 
-            magna at metus pellentesque, ut vehicula odio auctor. Proin eu purus nulla. Suspendisse 
-            potenti.
-            </p>
+
+            <div className='experienceContent'>
+                <p>AWAIT MORE XP ...</p>
+            </div>
+
+            <div className='experienceContent'>
+                <h3>DEVELOPPEUR INTEGRATEUR, EMANDARINE 2020</h3>
+                <ul>
+                    <li>
+                        Réalisation d'un outil WordPress en PHP
+                    </li>
+                </ul>
+                <figcaption>
+                    <cite>
+                        Stage de fin de formation pour "La Fabrique du Numérique", j'ai pu découvrir 
+                        "Bulma" un framework CSS bien sympa mais aussi le PHP spécifique de WordPress et de son 
+                        arborescence.
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='experienceContent experienceContent--last'>
+                <h3>TECHNICIEN DE MAINTENANCE EN HOTELLERIE 2013/2019</h3>
+                <ul>
+                    <li>
+                        Responsable du service
+                    </li>
+                    <li>
+                        Organisation du travail
+                    </li>
+                    <li>
+                        Satisfaction client
+                    </li>
+                </ul>
+                <figcaption>
+                    <cite>
+                        En relation directe avec les clients je donnais le meilleur de moi-même pour satisfaire
+                        leurs demandes et gérer les problèmes. Cette expérience m'a permis de développer 
+                        une forte persévérance, une conscience professionnelle et une volonté de sortir de ma  
+                        zone de confort.
+                    </cite>
+                </figcaption>
+            </div>
         </div>
     )
 }

@@ -1,7 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 @font-face {
     font-family: "Cyberpunk";
     src: url("../fontCyberpunk/Cyberpunk-Regular.ttf") format("truetype");
+}
+
+@keyframes changeMode {
+    0%{
+        transform: scale(1);
+    }
+
+    90%{
+        transform: scale(1);
+
+    }
+
+    100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes beat {
+    0%{
+        transform: scale(1);
+    }
+
+    40%{
+        transform: scale(1.5);
+    }
+
+    50%{
+        transform: scale(1.3);
+    }
+
+    60%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes wiggle {
+    0%{
+        transform: rotate(0);
+    }
+
+    20%{
+        transform: rotate(12deg);
+    }
+
+    30%{
+        transform: rotate(-12deg); 
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    60%{
+        transform: rotate(-10deg);
+    }
+
+    70%{
+        transform: rotate(5deg);
+    }
+
+    80%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
 }
 
 body{
@@ -9,12 +91,61 @@ body{
 }
 
 #root{
+    position: relative;
     font-family: 'Dosis', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: unset;
     padding-bottom: 2rem;
+}
+
+#invisible{
+    display: none;
+    position: absolute;
+    background-image: url(../assets/brouille.gif);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer > div{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h3{
+    color: #FFF001;
+}
+
+figcaption{
+    font-size: 18px;
+}
+
+.yellow{
+    color: #FFF001;
+}
+
+.brouillage{
+    display: initial !important;
 }
 
 .nomade{
@@ -27,4 +158,25 @@ body{
 
 .corpo{
     background-image: url(../assets/corpoWallpaper.jpg);
+}
+
+.heart{
+    color: red;
+    margin: 1rem;
+    font-size: 20px;
+    transform-origin: center;
+    animation: beat 1.5s ease-in-out infinite;
+}
+
+.react{
+    color: #48CEF7;
+    margin: 1rem;
+    font-size: 30px;
+    transform-origin: center;
+    animation: rotate 3s linear infinite;
+}
+
+.toTop{
+    font-size: 40px;
+    animation: wiggle 0.8s ease-in-out infinite;
 }
