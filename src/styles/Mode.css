@@ -56,7 +56,7 @@
 
 .cube__face--right{ 
     width: 15px;
-    transform: rotateY(90deg) translateZ(44px); 
+    transform: rotateY(90deg) translateZ(43px); 
 }
 
 .cube__face--back{ 

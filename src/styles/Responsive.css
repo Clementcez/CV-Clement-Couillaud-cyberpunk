@@ -26,6 +26,12 @@
     .divSkills[animSkills='hard skills'] > :nth-child(2n){
         animation: separateSkillsLeftMobil 0.1s 1s linear both;
     }
+    .divSkills[animSkills="soft skills"] > :nth-child(odd){
+        animation: separateSkillsLeftMobil .1s linear 1s both
+    }
+    .divSkills[animSkills="soft skills"] > :nth-child(2n){
+        animation: separateSkillsRightMobil .1s linear 1s both
+    }
 
     #root{
         background-image: none;
@@ -163,6 +169,12 @@
     }
     .divSkills[animSkills='hard skills'] > :nth-child(2n){
         animation: separateSkillsLeftMobil 0.1s 1s linear both;
+    }
+    .divSkills[animSkills="soft skills"] > :nth-child(odd){
+        animation: separateSkillsLeftMobil .1s linear 1s both
+    }
+    .divSkills[animSkills="soft skills"] > :nth-child(2n){
+        animation: separateSkillsRightMobil .1s linear 1s both
     }
 
     .containerInterets{
