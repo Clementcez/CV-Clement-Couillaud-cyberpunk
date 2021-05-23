@@ -24,11 +24,11 @@ function ButtonMode({ text, updateMode }){
     const inv = document.getElementById('invisible')
     inv.classList.add('brouillage')
 
-    function removeClass(){
-      const inv = document.getElementById('invisible')
-      inv.classList.remove('brouillage')
-    }
-    setTimeout(removeClass,200)
+
+    setTimeout(function(){
+        const inv = document.getElementById('invisible')
+        inv.classList.remove('brouillage')
+    }, 400)
 
     if(text.text === "nomade"){
       elem.classList.remove('gosseDesRues', 'corpo')
