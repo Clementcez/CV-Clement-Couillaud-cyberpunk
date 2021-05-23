@@ -1,0 +1,204 @@
+@media (max-width:  768px) {
+
+    @keyframes separateSkillsRightMobil {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(30%);
+        }
+    }
+
+    @keyframes separateSkillsLeftMobil {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(-30%);
+        }
+    }
+
+    .divSkills[animSkills='hard skills'] > :nth-child(2n+1){
+        animation: separateSkillsRightMobil 0.1s 1s linear both;
+    }
+    .divSkills[animSkills='hard skills'] > :nth-child(2n){
+        animation: separateSkillsLeftMobil 0.1s 1s linear both;
+    }
+
+    #root{
+        background-image: none;
+        background-color: whitesmoke !important;
+    }
+    .cvBanner{
+        font-size: unset;
+        margin: unset;
+        margin-top: 5rem;
+        border: unset;
+        border-top: solid #FF635C 2px;
+        border-bottom: solid #FF635C 2px;
+    }
+    .cyberBtn{
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    .rotateLink{
+        width: 20rem;
+        justify-content: space-around;
+    }
+
+    .rotateLink--mod{
+        width: auto;
+    }
+
+    .selectMode{
+        flex-direction: column-reverse;
+    }
+    .modulAudio{
+        margin-bottom: 2rem;
+    }
+    .interetsTitle{
+        margin-bottom: 3rem;
+    }
+    .interets{
+        margin: 5rem 0 5rem 0;
+    }
+    .interets1>p{
+        font-size: 25px;
+    }
+    .containerInterets{
+        flex-wrap: wrap;
+    }
+    .firstRow, .secondRow{
+        flex-direction: column;
+        margin: unset;
+    }
+    .apropos, .formation, .aptitude, .experience{
+        width: auto;
+        margin-top: 5rem;
+        border: unset;
+        border-top: solid #FF635C 2px;
+        border-bottom: solid #FF635C 2px;
+    }
+    .aptitude{
+        height: auto;
+        padding: unset;
+    }
+    .portfolioTitle, .jugementTitle{
+        font-size: 35px;
+        margin: unset;
+        text-align: center;
+    }
+
+    .portfolioTitle{
+        padding-bottom: 1rem;
+        background-color: black;
+        box-shadow: 0px 0px 15px 1px #ff635c;
+        border-top: solid #FF635C 2px;
+        border-bottom: solid #FF635C 2px;
+    }
+
+    .jugementTitle{
+        margin: 2rem 0 2rem 0;
+    }
+
+    .portfolio__text{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    .portfolio__text > p{
+        animation: moveTextToRight 8s linear infinite;
+    }
+
+    .jugement__content, .jugement__content__text{
+        height: 15rem;
+    }
+
+    .carrousel--2{
+        left: 30%;
+        animation: moveTextToLeft 5s 1.5s ease-out infinite;
+    }
+    .carrousel--3{
+        top: 60%;
+    }
+    .carrousel--6{
+        left: 15%;
+        animation: moveTextToLeft 5s 5.5s ease-out infinite;
+    }
+    .carrousel--7{
+        left: 60%;
+        animation: moveTextToLeft 5s 3.5s ease-out infinite;
+    }
+    .fileEffect2, .fileEffect1{
+       display: none;            
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    @keyframes separateSkillsRightMobil {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(30%);
+        }
+    }
+
+    @keyframes separateSkillsLeftMobil {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(-30%);
+        }
+    }
+
+    .divSkills[animSkills='hard skills'] > :nth-child(2n+1){
+        animation: separateSkillsRightMobil 0.1s 1s linear both;
+    }
+    .divSkills[animSkills='hard skills'] > :nth-child(2n){
+        animation: separateSkillsLeftMobil 0.1s 1s linear both;
+    }
+
+    .containerInterets{
+        flex-wrap: wrap;
+    }
+    .rotateLink{
+        justify-content: space-around;
+        width: 30rem;
+    }
+
+    .rotateLink--mod{
+        width: auto;
+    }
+    .apropos, .formation, .aptitude, .experience{
+        width: 45%;
+        margin-top: 5rem;
+    }
+    .aptitude{
+        height: 78rem;
+        padding: unset;
+    }
+    .portfolioTitle, .jugementTitle{
+        font-size: 35px;
+    }
+    .cyberBtn{
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .firstRow, .secondRow{
+        margin: 2rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .aptitude{
+        height: 78rem;
+    }
+}

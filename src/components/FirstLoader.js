@@ -18,7 +18,7 @@ function FirstLoader ({ updateMode }){
             resultNumber3.innerHTML = randomInt + 30
             resultNumber4.innerHTML = randomInt 
             if(n === 100){
-                // updateMode({mode: 'content'})
+                updateMode({mode: 'content'})
                 clearInterval(interval2)
             }
         }, 90)

@@ -5,6 +5,7 @@ import Mode from './mode/Mode'
 import Footer from './Footer'
 import FirstLoader from './FirstLoader'
 import '../styles/App.css'
+import '../styles/Responsive.css'
 
 function App() {
 
