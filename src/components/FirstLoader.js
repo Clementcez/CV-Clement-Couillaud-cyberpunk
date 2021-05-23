@@ -29,8 +29,8 @@ function FirstLoader ({ updateMode }){
             if(n === 100){
                 clearInterval(interval)
             }
-        }, 23)
-    })
+        }, 33)
+    });
 
     return (
         <div className='firstLoaderBox'>
@@ -92,9 +92,9 @@ function FirstLoader ({ updateMode }){
                     <span>N</span>
                     <span class="loader__text__G">G</span>
                     <span class="loader__text__number">
-                        <span id="1"></span>
-                        <span id="2"></span>
-                        <span id="3"></span>
+                        <span id="1"></span>.
+                        <span id="2"></span>.
+                        <span id="3"></span>.
                         <span id="4"></span>
                     </span>
                 </p>

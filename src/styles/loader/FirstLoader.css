@@ -86,7 +86,7 @@
     width: 100%;
     z-index: 999;
     opacity: 0;
-    animation: display 2.8s linear;
+    animation: display 3.9s linear;
   }
   
   .loader {
@@ -274,21 +274,22 @@
     font-size: x-large !important;
     letter-spacing: 5px;
     text-indent: unset;
+    color: #FF635C;
   }
   .loader__text > span {
     display: inline-block;
   }
   .loader__text__L {
-    animation: letterBug 0.4s 3 alternate;
+    animation: letterBug 0.4s 4 alternate;
   }
   .loader__text__O {
-    animation: letterBug2 0.5s 5 alternate;
+    animation: letterBug2 0.5s 7 alternate;
   }
   .loader__text__D {
-    animation: letterBug 0.2s 2 alternate;
+    animation: letterBug 0.2s 3 alternate;
   }
   .loader__text__G {
-    animation: letterBug2 0.3s 4 alternate;
+    animation: letterBug2 0.3s 9 alternate;
   }
   .loader__text__number {
     font-size: 10px;
@@ -307,7 +308,7 @@
     box-shadow: 0px 0px 15px 1px #FF635C;
     transform: scaleX(0);
     transform-origin: left;
-    animation: loaderBar 2s both;
+    animation: loaderBar 3s both;
   }
   .loader__bar__small {
     background-color: #FF635C;
@@ -316,7 +317,7 @@
     box-shadow: 0px 0px 15px 1px #FF635C;
     transform: scaleX(0);
     transform-origin: left;
-    animation: loaderSmallBar 0.3s 2s both linear;
+    animation: loaderSmallBar 0.3s 3s both linear;
   }
   .loader__subLoader {
     position: absolute;
@@ -338,7 +339,7 @@
     margin: 10px;
     transform: scaleX(0);
     transform-origin: left;
-    animation: loaderBar 2s both;
+    animation: loaderBar 3s both;
   }
   .loader__subLoader__small {
     background-color: #b85651;
@@ -346,6 +347,6 @@
     height: 2px;
     transform: scaleX(0);
     transform-origin: left;
-    animation: loaderSmallBar 0.3s 2s both linear;
+    animation: loaderSmallBar 0.3s 3s both linear;
   }
   
