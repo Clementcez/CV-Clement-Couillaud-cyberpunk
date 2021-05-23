@@ -269,7 +269,6 @@
   }
   .loader__text {
     position: absolute;
-    left: 20.8rem;
     bottom: 1rem;
     font-size: x-large !important;
     letter-spacing: 5px;
@@ -350,7 +349,7 @@
     animation: loaderSmallBar 0.3s 3s both linear;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width:  768px) {
     .loader{
       width: 90%;
     }
@@ -364,6 +363,7 @@
     }
 
     .loader__text {
+      bottom: 2rem;
       left: unset;
       font-size: 15px !important;
     }
@@ -409,5 +409,65 @@
       left: unset;
       top: 9rem;
     }
+
+    .loader__plusUnderlineDotted__plus{
+      width: 20px;
+    }
+
+    .loader__plusUnderlineDotted__plus__y{
+      left: 10px;
+    }
+
+    .loader__plusUnderlineDotted__plus__x{
+      left: 3px;
+    }
   }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .loader{
+    width: 90%;
+  }
+
+  .loader__score{
+    bottom: 10rem;
+  }
+
+  .loader__bar{
+    width: inherit;
+  }
+
+  .loader__text {
+    left: unset;
+  }
+
+  .loader__tRevert{
+    right: 5%;
+  }
+  .loader__tRevert--mod{
+    left: 5%;
+  }
+
+  .loader__squareCorner{
+    left: 95%;
+    bottom: 9rem;
+  }
+
+  .loader__squareCorner--botLeft{
+    left: 95%;
+    top: 9rem;
+  }
+
+  .loader__squareCorner--topRight{
+    right: 95%;
+    left: unset;
+  }
+
+  .loader__squareCorner--botRight{
+    right: 95%;
+    left: unset;
+    top: 9rem;
+  }
+}
+
+
   
