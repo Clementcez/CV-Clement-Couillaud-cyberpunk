@@ -85,8 +85,8 @@
     min-height: 100vh;
     width: 100%;
     z-index: 999;
-    opacity: 0;
-    animation: display 3.9s linear;
+    /* opacity: 0;
+    animation: display 3.9s linear; */
   }
   
   .loader {
@@ -348,5 +348,66 @@
     transform: scaleX(0);
     transform-origin: left;
     animation: loaderSmallBar 0.3s 3s both linear;
+  }
+
+  @media (max-width: 425px) {
+    .loader{
+      width: 90%;
+    }
+
+    .loader__score{
+      bottom: 10rem;
+    }
+
+    .loader__bar{
+      width: inherit;
+    }
+
+    .loader__text {
+      left: unset;
+      font-size: 15px !important;
+    }
+
+    .loader__text__number{
+      margin-left: 2rem;
+    }
+
+    .loader__tRevert{
+      right: 5%;
+    }
+    .loader__tRevert--mod{
+      left: 5%;
+    }
+    .loader__tRevert__small {
+      width: 7px;
+    }
+    .loader__tRevert__medium {
+      width: 10px;
+    }
+    .loader__tRevert__large {
+      width: 20px;
+    }
+
+    .loader__squareCorner{
+      width: 30px;
+      left: 95%;
+      bottom: 9rem;
+    }
+
+    .loader__squareCorner--botLeft{
+      left: 95%;
+      top: 9rem;
+    }
+
+    .loader__squareCorner--topRight{
+      right: 95%;
+      left: unset;
+    }
+
+    .loader__squareCorner--botRight{
+      right: 95%;
+      left: unset;
+      top: 9rem;
+    }
   }
   
