@@ -37,6 +37,10 @@
         background-image: none;
         background-color: whitesmoke !important;
     }
+    footer{
+        color: black;
+        font-weight: bold;
+    }
     .cvBanner{
         font-size: unset;
         margin: unset;
