@@ -148,6 +148,11 @@ figcaption{
     display: initial !important;
 }
 
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(../assets/nomadeWallpaper.jpg) url(../assets/childWallpaper.jpg) url(../assets/corpoWallpaper.jpg);
+}
+
 .nomade{
     background-image: url(../assets/nomadeWallpaper.jpg);
 }
@@ -177,6 +182,7 @@ figcaption{
 }
 
 .toTop{
+    cursor: pointer;
     font-size: 40px;
     animation: wiggle 0.8s ease-in-out infinite;
 }

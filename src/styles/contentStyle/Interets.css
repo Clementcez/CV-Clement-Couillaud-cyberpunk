@@ -69,3 +69,8 @@
     transform: translateY(0%);
     transition: 0.3s linear;
 }
+
+.containerInteretsList:hover .interetsList{
+    transform: translateY(0%);
+    transition: 0.3s linear;
+}

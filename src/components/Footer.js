@@ -1,5 +1,14 @@
 
 function Footer (){
+
+    function scrollTop(){
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+    }
+
     return (
         <footer>
             <div>
@@ -12,8 +21,8 @@ function Footer (){
                 <i class="fab fa-react react"></i>
             </div>
 
-            <div>
-                <a href='#root'><i class="fas fa-arrow-circle-up yellow toTop"></i></a>
+            <div onClick={scrollTop}>
+                <i class="fas fa-arrow-circle-up yellow toTop"></i>
             </div>
         </footer>
     )
