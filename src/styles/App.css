@@ -186,3 +186,8 @@ body::after{
     font-size: 40px;
     animation: wiggle 0.8s ease-in-out infinite;
 }
+
+.centerContent{
+    max-width: 1400px;
+    margin: auto;
+}

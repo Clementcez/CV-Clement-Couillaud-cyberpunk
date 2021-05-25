@@ -26,7 +26,7 @@ function Formation(){
                         mes compétences et mes connaissances en développement web. Le côté full remote de se 
                         projet professionnel m'a permis de gerer mon temps de travail et d'optimiser mon apprentissage.
                     </cite>
-                    <br></br>
+                    <br></br><br></br>
                     <cite>
                         Commentaire de Fabien Rahaingomanana, mentor Openclassrooms :
                         "Clément est un élève très curieux, qui n'a eu de cesse d'approfondir
@@ -46,7 +46,7 @@ function Formation(){
                     <cite>
                         Formation "préparatoire" dans le but d'aquerrir les bases du développement et 
                         de découvrir les outils mais aussi différent languages de programmation.
-                        Ce fut une formation extrèmement enrichissante tant sur le plan social 
+                        Ce fut une formation extrêmement enrichissante tant sur le plan social 
                         et personnel, que professionnel. Découvrez les recommandations de  
                         <a href={LettreAL} target='blank'> Andréas Livet</a> formateur front-end et
                         <a href={LettreJL} target='blank'> Juliette Lauriol</a> responsable pédagogique à mon sujet.

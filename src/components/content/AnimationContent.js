@@ -1,4 +1,3 @@
-import ecranBrouillé from '../../assets/brouille.gif'
 import '../../styles/loader/LoaderContent.css'
 
 function AnimationContent({duration}){
@@ -6,7 +5,7 @@ function AnimationContent({duration}){
 
     return (
         <div>
-            <img id='brouille' className={'fullContainer' + modeDuration} src={ecranBrouillé} alt='brouillé'></img>
+            <div id='brouille' className={'fullContainer' + modeDuration}></div>
             <div className={"container" + modeDuration}>
                 <div className="loaderContent">
                     <p>(CCXS COMPRESSED)</p>

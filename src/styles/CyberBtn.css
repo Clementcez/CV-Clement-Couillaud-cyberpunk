@@ -14,6 +14,7 @@
     font-weight: bolder;
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .cyberBtn>span{
@@ -26,6 +27,5 @@
 }
 
 .cyberBtn:hover{
-    transition: 0.3s;
     transform: translateY(-3px);
 }

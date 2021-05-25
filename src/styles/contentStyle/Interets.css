@@ -2,8 +2,7 @@
 .interets{
     width: 100%;
     background: black;
-    border-top: solid #FF635C 2px;
-    border-bottom: solid #FF635C 2px;
+    border: solid #FF635C 2px;
     box-shadow: 0px 0px 15px 1px #FF635C;
 }
 
@@ -62,15 +61,14 @@
     letter-spacing: 2px;
     font-size: 25px;
     color: black;
+    transition: 0.3s linear;
     transform: translateY(-100%);
 }
 
 .interets1:hover + .containerInteretsList > .interetsList{
     transform: translateY(0%);
-    transition: 0.3s linear;
 }
 
 .containerInteretsList:hover .interetsList{
     transform: translateY(0%);
-    transition: 0.3s linear;
 }

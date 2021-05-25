@@ -21,8 +21,10 @@ function App() {
         {/* effet brouillage lors du click sur un bouton */}
         <div id='invisible'></div>
         <Mode />
-        <Banner />
-        <Content />
+        <div className='centerContent'>
+          <Banner />
+          <Content />
+        </div>
         <Footer />
       </div>
       }

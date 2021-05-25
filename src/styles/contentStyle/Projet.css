@@ -39,6 +39,7 @@
     height: 25rem;
     object-fit: cover;
     opacity: 1;
+    transition: 0.3s;
     transform: scale(1.1);
 }
 
@@ -58,6 +59,7 @@
     height: 20%;
     top: 20%;
     opacity: 0;
+    transition: 0.3s;
 }
 
 .portfolio__text > p{
@@ -76,7 +78,6 @@
 .portfolio:hover .portfolio__text{
     opacity: 1;
     transform: scale(1.1);
-    transition: 0.3s;
 }
 
 .portfolio:hover .portfolio__text > p{

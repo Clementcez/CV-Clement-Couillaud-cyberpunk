@@ -13,7 +13,7 @@ function Experience(){
             <h2 className='experienceTitle'>Experiences</h2>
 
             <div className='experienceContent'>
-                <p>AWAIT MORE XP ...</p>
+                <p>WAITING FOR MORE XP...</p>
             </div>
 
             <div className='experienceContent'>

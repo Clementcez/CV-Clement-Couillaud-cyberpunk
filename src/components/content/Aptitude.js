@@ -25,7 +25,7 @@ function Aptitude({duration}){
 
                 {stateMode.mode === 'nomade' && 
                     <div className='waitClick'>
-                        <p>AWAIT CLICK ...</p>
+                        <p>WAITING FOR A CLICK...</p>
                     </div>
                 }
                 {stateMode.mode === 'hard skills' && 

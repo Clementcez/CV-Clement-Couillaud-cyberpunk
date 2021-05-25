@@ -90,11 +90,11 @@
 
   .fullContainer{
     position: absolute;
+    background-image: url(../../assets/brouille.gif);
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    object-fit: cover;
     opacity: 0;
     z-index: 1;
     animation: showScreenContentApropos calc(var(--animDuration) + 0.3s);

@@ -1,6 +1,6 @@
 
 .firstRow, .secondRow{
-    margin: 5rem;
+    margin: 5rem 0 5rem 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
