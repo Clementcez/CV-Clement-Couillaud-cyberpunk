@@ -116,6 +116,13 @@ footer{
     margin-top: 2rem;
 }
 
+.initials > p {
+    border: solid 2px #00C3FF;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    text-indent: unset;
+}
+
 footer > div{
     display: flex;
     align-items: center;
@@ -150,7 +157,8 @@ figcaption{
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url(../assets/nomadeWallpaper.jpg) url(../assets/childWallpaper.jpg) url(../assets/corpoWallpaper.jpg);
+    content:url(../assets/nomadeWallpaper.jpg) url(../assets/childWallpaper.jpg)
+    url(../assets/brouille.gif) url(../assets/corpoWallpaper.jpg);
 }
 
 .nomade{

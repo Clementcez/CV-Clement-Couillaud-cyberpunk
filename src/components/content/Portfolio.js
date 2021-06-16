@@ -3,6 +3,7 @@ import Reservia from '../../assets/portfolio/reservia.png'
 import Ohmyfood from '../../assets/portfolio/ohmyfood.png'
 import Orinoco from '../../assets/portfolio/orinoco.png'
 import Loader from '../../assets/portfolio/loader.png'
+import Meteo from '../../assets/portfolio/meteo.png'
 
 function Portfolio (){
     
@@ -34,6 +35,13 @@ function Portfolio (){
             img: Loader,
             alt: 'capture ecran loader',
             text: 'Projet perso, création du loader pour ce CV, SCSS / JS'
+        },
+
+        meteo:{
+            link: "https://cc-app-meteo.netlify.app/",
+            img: Meteo,
+            alt: 'capture ecran app meteo',
+            text: "Projet perso, création d'une app météo, VueJs"
         }
     }
 
@@ -67,6 +75,13 @@ function Portfolio (){
                     link={projet.loader.link} 
                     img={projet.loader.img} 
                     alt={projet.loader.alt}
+                />
+
+                <Projet 
+                    text={projet.meteo.text} 
+                    link={projet.meteo.link} 
+                    img={projet.meteo.img} 
+                    alt={projet.meteo.alt}
                 />
             </div>
         </div>

@@ -16,6 +16,10 @@ function Footer (){
                 <i class="fas fa-heart heart"></i>
             </div>
 
+            <div className='initials'>
+                <p>C.C</p>
+            </div>
+
             <div>
                 <p>React App</p>
                 <i class="fab fa-react react"></i>
