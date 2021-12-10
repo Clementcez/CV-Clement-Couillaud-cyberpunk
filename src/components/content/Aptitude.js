@@ -30,7 +30,7 @@ function Aptitude({duration}){
                 }
                 {stateMode.mode === 'hard skills' && 
                     <div className='divSkills' animSkills={animSkills}>
-                        <AptitudeList text='HTML/CSS'/>
+                        <AptitudeList text='Symfony'/>
                         <AptitudeList text='Java script'/>
                         <AptitudeList text='Node Js'/>
                         <AptitudeList text='Vue Js'/>

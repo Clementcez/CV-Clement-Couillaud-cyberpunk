@@ -17,6 +17,29 @@ function Experience(){
             </div>
 
             <div className='experienceContent'>
+                <h3>DEVELOPPEUR INTEGRATEUR SYMFONY, EOCOM 2021</h3>
+                <ul>
+                    <li>
+                        Refonte d'une application web Symfony
+                    </li>
+                    <li>
+                        Ajout de nouvelles fonctionnalités sur une application ecommerce Sylius
+                    </li>
+                    <li>
+                        Modification de rendu Twig
+                    </li>
+                </ul>
+                <figcaption>
+                    <cite>
+                        Incroyable expérience personnelle et professionnelle, j'ai découvert "Symfony" un framework PHP
+                        avec la refonte d'un projet ecommerce.
+                        Dans ce lapse de temps j'ai également intégré les modifications demander par le client sur 
+                        un projet ecommerce "Sylius".  
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='experienceContent'>
                 <h3>DEVELOPPEUR INTEGRATEUR, EMANDARINE 2020</h3>
                 <ul>
                     <li>
