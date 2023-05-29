@@ -15,6 +15,20 @@ function Formation(){
             <h2 className='formationTitle'>Formations</h2>
 
             <div className='formationContent'>
+                <h3>JOLICODE 2022 ( Poitiers )</h3>
+                <p>
+                    Symfony
+                </p>
+                <figcaption>
+                    <cite>
+                        Formation à Symfony, qui associe théorie et exercices pratiques,  
+                        d’en comprendre les mécanismes clé 
+                        et de maîtriser le développement d’applications web modernes. 
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='formationContent'>
                 <h3>OPENCLASSROOMS 2020/2021 ( remote )</h3>
                 <p>
                     Parcours développeur web
@@ -36,7 +50,7 @@ function Formation(){
                 </figcaption>
             </div>
 
-            <div className='formationContent'>
+            <div className='formationContent formationContent--last'>
                 <h3>FABRIQUE DU NUMERIQUE 2019/2020 ( Poitiers )</h3>
                 <p>
                     Parcours développeur web
@@ -50,18 +64,6 @@ function Formation(){
                         et personnel, que professionnel. Découvrez les recommandations de  
                         <a href={LettreAL} target='blank'> Andréas Livet</a> formateur front-end et
                         <a href={LettreJL} target='blank'> Juliette Lauriol</a> responsable pédagogique à mon sujet.
-                    </cite>
-                </figcaption>
-            </div>
-
-            <div className='formationContent formationContent--last'>
-                <h3>LYCÉE AUGUSTE PERRET ( Poitiers )</h3>
-                <p>
-                    BEP - BAC pro
-                </p>
-                <figcaption>
-                    <cite>
-                        Techniques et installations des systèmes énergétiques et climatiques.
                     </cite>
                 </figcaption>
             </div>

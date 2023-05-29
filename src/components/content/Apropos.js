@@ -42,8 +42,12 @@ function Apropos(){
             </p>
 
             <p>
-                <i class="fas fa-long-arrow-alt-right yellow"></i> 
-                Aujourd'hui je souhaite mettre à profit mes acquis mais aussi me perfectionner au sein d'une entreprise en tant que <b>Développeur Web</b>.
+                En poste chez Hoplie depuis mars 2022, j'ai fait un virage serré dans mon apprentissage en passant
+                sur du développement BACK symfony, avec succès !
+            </p>
+
+            <p>
+                <i class="fas fa-long-arrow-alt-right yellow"></i> Aujourd'hui je souhaite mettre à profit mes acquis mais aussi me perfectionner au sein d'une entreprise en tant que <b>Développeur Web</b>.
             </p>
 
             <div className='apropos__dl'>

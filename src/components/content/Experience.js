@@ -17,6 +17,30 @@ function Experience(){
             </div>
 
             <div className='experienceContent'>
+                <h3>DEVELOPPEUR BACK SYMFONY, HOPLIE 2022 / ?</h3>
+                <ul>
+                    <li>
+                        ERP
+                    </li>
+                    <li>
+                        Ecommerce
+                    </li>
+                    <li>
+                        Sites vitrine
+                    </li>
+                </ul>
+                <figcaption>
+                    <cite>
+                        Actuellement en poste chez Hoplie, j'ai énormément approfondi Symfony et prend du plaisir 
+                        à chercher, tester et utiliser les différents bundles du framework.
+                        Grace aux multiples refontes/créations de sites, ERP et aussi à la maintenance de ceux-ci
+                        ou encore à la confection d'un "starter" admin natif puis une reféction vers Easyadmin,
+                        j'ai aujourd'hui un certains nombres de cordes à mon arc pour exploiter Symfony.
+                    </cite>
+                </figcaption>
+            </div>
+
+            <div className='experienceContent'>
                 <h3>DEVELOPPEUR INTEGRATEUR SYMFONY, EOCOM 2021</h3>
                 <ul>
                     <li>
@@ -39,7 +63,7 @@ function Experience(){
                 </figcaption>
             </div>
 
-            <div className='experienceContent'>
+            <div className='experienceContent experienceContent--last'>
                 <h3>DEVELOPPEUR INTEGRATEUR, EMANDARINE 2020</h3>
                 <ul>
                     <li>
@@ -55,28 +79,6 @@ function Experience(){
                 </figcaption>
             </div>
 
-            <div className='experienceContent experienceContent--last'>
-                <h3>TECHNICIEN DE MAINTENANCE EN HOTELLERIE 2013/2019</h3>
-                <ul>
-                    <li>
-                        Responsable du service
-                    </li>
-                    <li>
-                        Organisation du travail
-                    </li>
-                    <li>
-                        Satisfaction client
-                    </li>
-                </ul>
-                <figcaption>
-                    <cite>
-                        En relation directe avec les clients je donnais le meilleur de moi-même pour satisfaire
-                        leurs demandes et gérer les problèmes. Cette expérience m'a permis de développer 
-                        une forte persévérance, une conscience professionnelle et une volonté de sortir de ma  
-                        zone de confort.
-                    </cite>
-                </figcaption>
-            </div>
         </div>
     )
 }
