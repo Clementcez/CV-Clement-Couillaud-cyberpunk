@@ -47,7 +47,7 @@ function Apropos(){
             </p>
 
             <p>
-                <i class="fas fa-long-arrow-alt-right yellow"></i> Aujourd'hui je souhaite mettre à profit mes acquis mais aussi me perfectionner au sein d'une entreprise en tant que <b>Développeur Web</b>.
+                <i class="fas fa-long-arrow-alt-right yellow"></i> Aujourd'hui je souhaite mettre à profit mes acquis mais aussi me perfectionner en tant que <b>Développeur Web</b>.
             </p>
 
             <div className='apropos__dl'>

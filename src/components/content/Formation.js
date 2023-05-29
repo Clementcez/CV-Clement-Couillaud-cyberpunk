@@ -21,7 +21,7 @@ function Formation(){
                 </p>
                 <figcaption>
                     <cite>
-                        Formation à Symfony, qui associe théorie et exercices pratiques,  
+                        Formation à Symfony qui associe théorie et exercices pratiques, afin  
                         d’en comprendre les mécanismes clé 
                         et de maîtriser le développement d’applications web modernes. 
                     </cite>
